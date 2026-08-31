@@ -10,7 +10,7 @@ export const { ObserveModule, ObserveInstrument } = createObserveModule()
   imports: [
     // Distributed tracing, auto-correlated logs, request/job metrics, error
     // telemetry, alarms, and more — out of the box. Sign up at https://observe.nestjs.com
-    EnvConfigModule,
+    EnvConfigModule.forRoot(),
   ],
   controllers: [AppController],
   providers: [AppService],
