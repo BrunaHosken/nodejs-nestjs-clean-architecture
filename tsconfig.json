@@ -19,7 +19,6 @@
     "strictPropertyInitialization": false,
     "types": ["vitest/globals", "node"],
     "resolveJsonModule": true,
-    "baseUrl": "./",
     "paths": {
       "@/*":["./src/*"]
     }
