@@ -1,7 +1,11 @@
 import { DynamicModule, Module } from '@nestjs/common'
-import { join } from 'node:path'
+import { dirname,join } from 'node:path'
+import { fileURLToPath } from 'node:url';
 import { ConfigModule, ConfigModuleOptions } from '@nestjs/config'
 import { EnvConfigService } from './env-config.service.js';
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
 
 @Module({
   providers: [EnvConfigService]
