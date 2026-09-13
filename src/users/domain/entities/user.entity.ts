@@ -6,24 +6,23 @@ export type UserProps = {
 }
 
 export class UserEntity {
-  constructor(public readonly props: UserProps){
+  constructor(public readonly props: UserProps) {
     this.props.createdAt = this.props.createdAt ?? new Date()
   }
 
-  get name(){
+  get name() {
     return this.props.name
   }
 
-  get email(){
+  get email() {
     return this.props.email
   }
 
-  get password(){
+  get password() {
     return this.props.password
   }
 
-  get createdAt(){
+  get createdAt() {
     return this.props.createdAt
   }
-
 }

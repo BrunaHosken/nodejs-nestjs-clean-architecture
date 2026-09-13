@@ -5,7 +5,6 @@ import { AppService } from './app.service.js'
 import { EnvConfigModule } from './shared/infrastructure/env-config/env-config.module.js'
 import { UsersModule } from './users/infrastructure/users.module.js'
 
-
 export const { ObserveModule, ObserveInstrument } = createObserveModule()
 
 @Module({

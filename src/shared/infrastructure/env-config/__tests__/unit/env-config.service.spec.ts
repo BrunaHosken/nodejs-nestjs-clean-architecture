@@ -5,7 +5,6 @@ import { EnvConfigModule } from '../../env-config.module.js'
 describe('EnvConfigService unit tests', () => {
   let sut: EnvConfigService
 
-
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
       imports: [EnvConfigModule.forRoot()],
@@ -24,6 +23,6 @@ describe('EnvConfigService unit tests', () => {
   })
 
   it('should return the variable NODE_ENV', () => {
-    expect(sut.getNodeEnv()).toBe("test")
+    expect(sut.getNodeEnv()).toBe('test')
   })
 })

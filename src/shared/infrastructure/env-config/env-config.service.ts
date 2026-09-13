@@ -1,10 +1,10 @@
-import { Injectable } from '@nestjs/common';
-import { EnvConfig } from './env-config.interface.js';
-import { ConfigService } from '@nestjs/config';
+import { Injectable } from '@nestjs/common'
+import { EnvConfig } from './env-config.interface.js'
+import { ConfigService } from '@nestjs/config'
 
 @Injectable()
-export class EnvConfigService implements EnvConfig{
-  constructor(private configService: ConfigService ){}
+export class EnvConfigService implements EnvConfig {
+  constructor(private configService: ConfigService) {}
 
   getAppPort(): number {
     return Number(this.configService.get<number>('PORT'))
